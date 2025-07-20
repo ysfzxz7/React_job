@@ -1,5 +1,6 @@
 import "./App.css";
 import Hero from "./componants/Hero";
+import Jobs from "./componants/Jobs";
 import Main from "./componants/Main";
 import Nav from "./componants/Nav";
 
@@ -11,6 +12,9 @@ function App() {
         <Hero />
       </div>
       <Main />
+      <div className="bg-primary/5">
+        <Jobs />
+      </div>
     </div>
   );
 }

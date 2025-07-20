@@ -1,6 +1,6 @@
 const Main = () => {
   return (
-    <main className="flex justify-center   lg:w-[70%] mx-auto py-5 gap-5">
+    <main className="flex justify-center lg:w-[70%] mx-auto py-5 gap-5">
       <div className=" p-4 shadow rounded bg-yellow-100 w-full ">
         <h1 className="text-xl font-semibold">For developers</h1>
         <h5 className="text-xs font-semibold">
