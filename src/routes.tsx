@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Index from "./pages/Index";
+import JobsPage from "./pages/JobsPage";
 
 export const routes = createBrowserRouter([
   {
@@ -14,7 +15,11 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/jobs",
-        element: <h1>Hello id</h1>,
+        element: <JobsPage />,
+      },
+      {
+        path: "jobs/:id",
+        element: <h1>with id</h1>,
       },
     ],
   },
