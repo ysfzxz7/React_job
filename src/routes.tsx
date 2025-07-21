@@ -18,6 +18,7 @@ export const routes = createBrowserRouter([
       {
         path: "/jobs",
         element: <JobsPage />,
+        errorElement: <div>Something wrong happend</div>,
       },
       {
         path: "addJob",
