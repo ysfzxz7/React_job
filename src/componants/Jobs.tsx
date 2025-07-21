@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import JobsCard from "../UI/JobCard";
 
 const Jobs = () => {
@@ -12,7 +13,7 @@ const Jobs = () => {
         <JobsCard />
       </div>
       <div className="mx-auto w-fit bg-black text-white px-4 py-1 rounded mt-10">
-        <h1>See More</h1>
+        <Link to={"/jobs"}>See More</Link>
       </div>
     </div>
   );

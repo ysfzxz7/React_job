@@ -3,6 +3,7 @@ import App from "./App";
 import Index from "./pages/Index";
 import JobsPage from "./pages/JobsPage";
 import SingleJob from "./pages/SingleJob";
+import AddJob from "./pages/AddJob";
 
 export const routes = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ export const routes = createBrowserRouter([
       {
         path: "/jobs",
         element: <JobsPage />,
+      },
+      {
+        path: "addJob",
+        element: <AddJob />,
       },
       {
         path: "jobs/:id",

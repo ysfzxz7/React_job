@@ -11,7 +11,9 @@ const Nav = () => {
         <Link to="/jobs" className=" ">
           Jobs
         </Link>
-        <h1 className="cursor-pointer ">Add Job</h1>
+        <Link to={"addJob"} className=" ">
+          Add Job
+        </Link>
       </div>
     </div>
   );
