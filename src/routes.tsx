@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Index from "./pages/Index";
 import JobsPage from "./pages/JobsPage";
+import SingleJob from "./pages/SingleJob";
 
 export const routes = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ export const routes = createBrowserRouter([
       },
       {
         path: "jobs/:id",
-        element: <h1>with id</h1>,
+        element: <SingleJob />,
       },
     ],
   },
