@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const JobsCard = () => {
   return (
-    <div className=" p-2 shadow-xl rounded bg-white">
+    <div className=" p-2  shadow-xl rounded bg-white">
       <h5 className="text-xs font-semibold">Full-Time</h5>
       <h1 className="text-lg font-semibold mb-3"> Senior React Developer</h1>
       <p className="line-clamp-2 text-xs ">
@@ -15,9 +17,12 @@ const JobsCard = () => {
       </span>
       <div className="text-xs flex border-t  border-primary/20 pt-3 items-center justify-between">
         <span className="font-semibold">Biston, MA</span>
-        <span className="text-white bg-primary hover:bg-primary/90  font-medium rounded text-xs px-2 py-1.5   ">
+        <Link
+          to={"/jobs/1"}
+          className="text-white bg-primary hover:bg-primary/90  font-medium rounded text-xs px-2 py-1.5   "
+        >
           Read More
-        </span>
+        </Link>
       </div>
     </div>
   );
