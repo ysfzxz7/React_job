@@ -14,7 +14,9 @@
 }
 
 input,
-textarea {
+textarea,
+select,
+option {
   inset: all;
   outline: none;
 }

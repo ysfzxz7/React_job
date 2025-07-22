@@ -1,18 +1,21 @@
 import { Link, useParams } from "react-router-dom";
 import jobsdata from "../data";
+import NotFound from "../UI/NotFound";
 
 const SingleJob = () => {
   const { id } = useParams();
 
-  const [job] = jobsdata.filter((oneJob) => oneJob.uuid == id);
-  const params = useParams();
-  console.log(params.id);
+  const job = jobsdata.find((oneJob) => oneJob.uuid == id);
+
+  if (!job) {
+    return <NotFound />;
+  }
   return (
-    <div className="bg-blue-100 lg:px-40 pb-4 mx-auto h-[100vh]">
+    <div className="bg-blue-100 lg:px-40 pb-4 mx-auto ">
       <Link to="/" className="bg-white w-[100%] block py-2 font-semibold">
         Back to Job Listing
       </Link>
-      <div className="flex my-10 gap-3">
+      <div className="flex-row lg:flex  my-10 gap-3">
         <div className=" h-fit space-y-3">
           <div className="bg-white rounded p-4 shadow-lg space-y-2">
             <h4 className="text-xs">{job.jobtype}</h4>
@@ -28,8 +31,8 @@ const SingleJob = () => {
             </h5>
           </div>
         </div>
-        <div className=" lg:w-[70%] space-y-3 ">
-          <div className="bg-white rounded p-3 shadow-lg">
+        <div className="w-full  space-y-3 ">
+          <div className="bg-white rounded p-3 shadow-lg mt-2 lg:mt-0 ">
             <h3 className="font-semibold text-sm mb-3">Company Info</h3>
             <h2 className="mb-2">{job.companyName}</h2>
             <p className="text-xs leading-4 indent-3">{job.companyDesc}</p>
