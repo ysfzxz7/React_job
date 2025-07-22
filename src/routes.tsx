@@ -4,6 +4,7 @@ import Index from "./pages/Index";
 import JobsPage from "./pages/JobsPage";
 import SingleJob from "./pages/SingleJob";
 import AddJob from "./pages/AddJob";
+import NotFound from "./UI/NotFound";
 
 export const routes = createBrowserRouter([
   {
@@ -32,6 +33,6 @@ export const routes = createBrowserRouter([
   },
   {
     path: "*",
-    element: <h1>Error</h1>,
+    element: <NotFound />,
   },
 ]);
