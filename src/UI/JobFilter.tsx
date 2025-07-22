@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useFilter } from "../Gears/useFilter";
 import LocationFilter from "./LocationFilter";
-import TypeFilter from "./typeFilter";
+import TypeFilter from "./TypeFilter";
 
 interface jobFilterType {
   setData: any;
