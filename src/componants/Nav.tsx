@@ -1,19 +1,34 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
     <div className="flex text-white justify-between items-center lg:mx-32 p-4 border-b">
       <h1 className="text-2xl font-bold">React Jobs</h1>
       <div className="flex gap-4 items-center">
-        <Link to={"/"} className=" bg-black rounded px-2 py-1">
+        <NavLink
+          to={"/"}
+          className={({ isActive }) =>
+            isActive ? "bg-black px-2 rounded py-1" : "bg-none"
+          }
+        >
           Home
-        </Link>
-        <Link to="/jobs" className=" ">
+        </NavLink>
+        <NavLink
+          to="/jobs"
+          className={({ isActive }) =>
+            isActive ? "bg-black px-2 rounded py-1" : "bg-none"
+          }
+        >
           Jobs
-        </Link>
-        <Link to={"addJob"} className=" ">
+        </NavLink>
+        <NavLink
+          to={"addJob"}
+          className={({ isActive }) =>
+            isActive ? "bg-black px-2 rounded py-1 " : "bg-none"
+          }
+        >
           Add Job
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

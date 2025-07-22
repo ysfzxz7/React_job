@@ -9,7 +9,7 @@ const Jobs = () => {
       <h1 className="mx-auto w-fit text-xl font-bold text-primary">
         Browse Jobs
       </h1>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 justify-between gap-2 mx-4 lg:mx-0 ">
+      <div className="grid lg:grid-cols-3  md:grid-cols-2 justify-between gap-2 mx-4 lg:mx-0 ">
         <JobsCard job={job1} />
         <JobsCard job={job2} />
         <JobsCard job={job3} />

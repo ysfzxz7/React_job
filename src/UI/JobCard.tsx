@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-// import type { jobsType } from "../type";
+import type { jobsType } from "../type";
 
-// interface childjob {
-//   job: jobsType;
-// }
+interface childjob {
+  job: jobsType;
+}
 
-const JobsCard: React.FC<any> = ({ job }) => {
+const JobsCard: React.FC<childjob> = ({ job }) => {
   console.log(job);
   return (
     <div key={job.uuid} className=" p-2  shadow-xl rounded bg-white">
