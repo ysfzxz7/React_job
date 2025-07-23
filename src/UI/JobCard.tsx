@@ -7,7 +7,7 @@ interface childjob {
 
 const JobsCard: React.FC<childjob> = ({ job }) => {
   return (
-    <div className=" p-2  shadow-xl rounded bg-white">
+    <div className=" p-2  duration-300 shadow-xl rounded bg-white">
       <h5 className="text-xs font-semibold">{job.jobtype}</h5>
       <h1 className="text-lg font-semibold mb-3"> {job.title}</h1>
       <p className="line-clamp-2 text-xs ">{job.description}</p>

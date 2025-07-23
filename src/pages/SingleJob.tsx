@@ -49,7 +49,7 @@ const SingleJob = () => {
           <div className="bg-white p-3 shadow-lg rounded space-y-2">
             <h2 className="font-semibold">Mange Jobs</h2>
             <Link
-              to={"/"}
+              to={`/edit/${job.uuid}`}
               className="bg-primary py-1.5 rounded block text-white text-center"
             >
               Edit Jobs

@@ -1,10 +1,10 @@
 import type React from "react";
+import useDateStore from "../stores/useDataStore";
 
-const TypeFilter: React.FC<any> = ({ setTypeFilter }) => {
+const TypeFilter: React.FC<any> = () => {
+  const { typeFilter } = useDateStore();
   const handleChange = (e: any) => {
-    const filter = e.target.value;
-    setTypeFilter(filter);
-    console.log(filter);
+    typeFilter(e.target.value);
   };
   return (
     <div className="flex items-center">

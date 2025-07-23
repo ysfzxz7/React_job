@@ -5,6 +5,7 @@ import JobsPage from "./pages/JobsPage";
 import SingleJob from "./pages/SingleJob";
 import AddJob from "./pages/AddJob";
 import NotFound from "./UI/NotFound";
+import EditJob from "./pages/EditJob";
 
 export const routes = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const routes = createBrowserRouter([
       {
         path: "jobs/:id",
         element: <SingleJob />,
+      },
+      {
+        path: "edit/:id",
+        element: <EditJob />,
       },
     ],
   },

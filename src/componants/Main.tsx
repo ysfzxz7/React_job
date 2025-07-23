@@ -11,12 +11,12 @@ const Main = () => {
         </h2>
       </div>
       <div className=" p-4 shadow rounded bg-blue-200  w-full transition-colors duration-500 hover:bg-primary/40 cursor-pointer">
-        <h1 className="text-xl font-semibold">For developers</h1>
+        <h1 className="text-xl font-semibold">For Employers</h1>
         <h5 className="text-xs font-semibold">
-          Browse our react jobs and start your carreer today
+          List your job to find the perfect developer for the role
         </h5>
         <h2 className="bg-primary w-fit text-white p-2 rounded mt-4 text-xs">
-          Browse Jobs
+          Add Job
         </h2>
       </div>
     </main>
