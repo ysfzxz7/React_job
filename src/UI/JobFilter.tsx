@@ -1,3 +1,4 @@
+import KeyWordFilter from "./KeyWordFilter";
 import LocationFilter from "./LocationFilter";
 import TypeFilter from "./TypeFilter";
 
@@ -7,6 +8,7 @@ const JobFilter = () => {
       <div className="flex gap-2">
         <TypeFilter />
         <LocationFilter />
+        <KeyWordFilter />
       </div>
       <button
         onClick={() => console.log("clicked")}

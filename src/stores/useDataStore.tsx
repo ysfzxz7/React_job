@@ -6,6 +6,7 @@ interface useDateStoreType {
   jobdata: jobsType[];
   typeFilter: (type: string) => void;
   locationFilter: (location: string) => void;
+  keyWord: (word: string) => void;
 }
 const useDateStore = create<useDateStoreType>((set) => ({
   //all the data found
@@ -22,6 +23,12 @@ const useDateStore = create<useDateStoreType>((set) => ({
     })),
 
   //to filter the data based on the keyword entered , todo soon
+  keyWord: (word) =>
+    set(() => ({
+      jobdata: jobsdata.filter((item) => {
+        return item.description.toLowerCase().includes(word.toLowerCase());
+      }),
+    })),
 }));
 
 export default useDateStore;
