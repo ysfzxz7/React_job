@@ -8,7 +8,7 @@ const TypeFilter: React.FC<any> = () => {
   };
   return (
     <div className="flex items-center">
-      <h1>Type</h1>
+      <h4 className="input-label">Type</h4>
       <select
         onChange={handleChange}
         name="typefilter"

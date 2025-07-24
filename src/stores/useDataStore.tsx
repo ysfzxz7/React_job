@@ -26,7 +26,10 @@ const useDateStore = create<useDateStoreType>((set) => ({
   keyWord: (word) =>
     set(() => ({
       jobdata: jobsdata.filter((item) => {
-        return item.description.toLowerCase().includes(word.toLowerCase());
+        return (
+          item.description.toLowerCase().includes(word.toLowerCase()) ||
+          item.title.toLowerCase().includes(word.toLowerCase())
+        );
       }),
     })),
 }));

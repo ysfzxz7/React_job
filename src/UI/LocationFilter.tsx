@@ -9,7 +9,7 @@ const LocationFilter = () => {
   };
   return (
     <div className="flex items-center">
-      <h1>Location</h1>
+      <h4 className="input-label">Location</h4>
       <select
         className="input-base"
         name="Location"
