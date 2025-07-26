@@ -1,6 +1,6 @@
 import JobsCard from "../UI/JobCard";
 import JobFilter from "../UI/JobFilter";
-import UiListing from "../UI/uiListing";
+import UiListing from "../UI/UiListing";
 import JobIndex from "../componants/JobsIndex";
 import useDateStore from "../stores/useDataStore";
 import usePagination from "../stores/usePagination";
