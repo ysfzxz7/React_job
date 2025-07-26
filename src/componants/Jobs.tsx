@@ -15,7 +15,7 @@ const Jobs = () => {
         <JobsCard job={job3} />
       </div>
       <div className="mx-auto w-fit bg-black text-white px-4 py-1 rounded mt-10">
-        <Link to={"/jobs"}>See More</Link>
+        <Link to={`/jobs`}>See More</Link>
       </div>
     </div>
   );

@@ -17,6 +17,9 @@
   .input-label {
     @apply font-semibold text-sm;
   }
+  .error-style {
+    @apply text-xs text-red-700 mb-3;
+  }
 }
 
 input,
