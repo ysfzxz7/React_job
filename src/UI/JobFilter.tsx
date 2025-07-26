@@ -1,10 +1,11 @@
 import KeyWordFilter from "./KeyWordFilter";
 import LocationFilter from "./LocationFilter";
 import TypeFilter from "./TypeFilter";
+import UiListing from "./uiListing";
 
 const JobFilter = () => {
   return (
-    <div className="lg:flex space-y-3 mx-2 rounded justify-between border-gray-300 border-1  bg-amber-50 mb-10 p-2">
+    <div className="lg:flex py-2 gap-y-2 px-2 rounded justify-between  border-gray-300 border-1  bg-amber-50 mb-10 ">
       <div className="flex gap-2 flex-wrap">
         <TypeFilter />
         <LocationFilter />
