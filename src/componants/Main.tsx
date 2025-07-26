@@ -1,23 +1,31 @@
+import { Link } from "react-router-dom";
+
 const Main = () => {
   return (
-    <main className="flex justify-center lg:w-[70%] mx-auto py-5 gap-5">
+    <main className="flex justify-center lg:w-[70%] mx-2 md:mx-auto py-5 gap-5 ">
       <div className=" p-4 shadow rounded bg-yellow-100/50 w-full hover:bg-yellow-200 cursor-pointer transition-colors duration-500 ">
         <h1 className="text-xl font-semibold">For developers</h1>
-        <h5 className="text-xs font-semibold">
+        <h5 className="text-xs font-medium">
           Browse our react jobs and start your carreer today
         </h5>
-        <h2 className="bg-black w-fit text-white p-2 text-xs  rounded mt-4">
+        <Link
+          to={"/jobs"}
+          className="bg-black w-fit text-white p-2 text-xs block rounded mt-4"
+        >
           Browse Jobs
-        </h2>
+        </Link>
       </div>
       <div className=" p-4 shadow rounded bg-blue-200  w-full transition-colors duration-500 hover:bg-primary/40 cursor-pointer">
         <h1 className="text-xl font-semibold">For Employers</h1>
-        <h5 className="text-xs font-semibold">
+        <h5 className="text-xs font-medium">
           List your job to find the perfect developer for the role
         </h5>
-        <h2 className="bg-primary w-fit text-white p-2 rounded mt-4 text-xs">
+        <Link
+          to={"/addjob"}
+          className="bg-primary w-fit text-white p-2 rounded mt-4 block text-xs"
+        >
           Add Job
-        </h2>
+        </Link>
       </div>
     </main>
   );
