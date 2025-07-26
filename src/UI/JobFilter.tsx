@@ -1,7 +1,6 @@
 import KeyWordFilter from "./KeyWordFilter";
 import LocationFilter from "./LocationFilter";
 import TypeFilter from "./TypeFilter";
-import UiListing from "./uiListing";
 
 const JobFilter = () => {
   return (
