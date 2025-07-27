@@ -1,13 +1,24 @@
 import { Link } from "react-router-dom";
+import { motion, useInView } from "framer-motion";
 import type { jobsType } from "../type";
+import { useRef } from "react";
 
 interface childjob {
   job: jobsType;
 }
 
 const JobsCard: React.FC<childjob> = ({ job }) => {
+  const ref = useRef(null);
+  const isView = useInView(ref, { once: true });
+
   return (
-    <div className=" p-2  duration-300 shadow-xl rounded bg-white">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 5 }}
+      animate={isView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className=" p-2  duration-300 shadow-xl rounded bg-white"
+    >
       <h5 className="text-xs font-semibold">{job.jobtype}</h5>
       <h1 className="text-lg font-semibold mb-3"> {job.title}</h1>
       <p className="line-clamp-2 text-xs ">{job.description}</p>
@@ -24,7 +35,7 @@ const JobsCard: React.FC<childjob> = ({ job }) => {
           Read More
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -19,7 +19,6 @@ const JobsPage = () => {
       <h1 className="text-4xl font-semibold mx-auto w-fit my-10">
         Browse Jobs
       </h1>
-
       <JobFilter />
       <UiListing />
       <div

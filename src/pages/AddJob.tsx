@@ -2,8 +2,11 @@ import { useForm } from "react-hook-form";
 import type z from "zod";
 import { formSchema } from "../type";
 import { zodResolver } from "@hookform/resolvers/zod";
+import useNotification from "../stores/useNotification";
 
 const AddJob = () => {
+  const { setNotificationVisible } = useNotification();
+
   type FormData = z.infer<typeof formSchema>;
 
   const {
@@ -150,7 +153,15 @@ const AddJob = () => {
           >
             Add Job
           </button>
-          <button className="bg-white text-xs text-primary font-semibold rounded py-1.5 hover:bg-amber-100 px-2 cursor-pointer">
+          <button
+            onClick={() =>
+              setNotificationVisible(
+                "Reset",
+                "You have just Rest all the field"
+              )
+            }
+            className="bg-white text-xs text-primary font-semibold rounded py-1.5 hover:bg-amber-100 px-2 cursor-pointer"
+          >
             Reset
           </button>
         </div>
