@@ -9,7 +9,7 @@ const Notification = () => {
     <div
       className={` ${
         !visibility && "hidden"
-      } hover:bg-primary/30 transition-all duration-300  absolute top-20 right-5 rounded border-gray-300 border-2 bg-gray-200  p-5`}
+      } hover:bg-primary/30 transition-all duration-300   fixed top-20 right-5 rounded border-gray-300 border-2 bg-gray-200  p-5`}
     >
       <IoClose
         className="absolute right-2 top-2 cursor-pointer hover:scale-125 transition-all duration-200"
