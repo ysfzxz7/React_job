@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import jobsdata from "../data";
+import { jobsdata } from "../data";
 import NotFound from "../UI/NotFound";
 
 const SingleJob = () => {

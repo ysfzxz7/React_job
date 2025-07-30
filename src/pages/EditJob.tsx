@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import jobsdata from "../data";
+import { jobsdata } from "../data";
 import { useState } from "react";
 
 const EditJob = () => {

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import JobsCard from "../UI/JobCard";
-import jobsdata from "../data";
+import { jobsdata } from "../data";
 
 const Jobs = () => {
   const [job1, job2, job3] = jobsdata;

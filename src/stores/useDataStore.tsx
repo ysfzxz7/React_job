@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import jobsdata from "../data";
+import { jobsdata } from "../data";
 import type { jobsType } from "../type";
 
 interface useDateStoreType {

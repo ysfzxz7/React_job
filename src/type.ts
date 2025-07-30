@@ -33,3 +33,12 @@ export const formSchema = z.object({
   companyEmail: z.email("Enter a valid email"),
   companyPhone: z.string().min(10, "Enter a valid number"),
 });
+
+export type reviewType = {
+  name: string;
+  role: string;
+  company?: string;
+  avatar: string;
+  rating: number;
+  quote: string;
+};

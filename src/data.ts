@@ -1,6 +1,6 @@
-import type { jobsType } from "./type";
+import type { jobsType, reviewType } from "./type";
 
-let jobsdata: jobsType[] = [
+export const jobsdata: jobsType[] = [
   {
     uuid: "f72e6f32-0e43-4e6a-b79e-0f99103dff01",
     jobtype: "Full Time",
@@ -268,4 +268,93 @@ let jobsdata: jobsType[] = [
     phone: "+1333555111",
   },
 ];
-export default jobsdata;
+
+export const review: reviewType[] = [
+  {
+    name: "Alex Carter",
+    role: "CTO",
+    company: "TechNova Inc.",
+    avatar: "https://example.com/avatars/alex-carter.jpg",
+    rating: 5,
+    quote:
+      "We hired 3 senior developers in just 2 weeks! The vetting process was flawless, and every candidate was a perfect fit.",
+  },
+  {
+    name: "Priya Mehta",
+    role: "Engineering Manager",
+    company: "DevCraft Labs",
+    avatar: "https://example.com/avatars/priya-mehta.jpg",
+    rating: 5,
+    quote:
+      "The AI matching system saved us dozens of hours. Found a lead DevOps engineer who’s now a key part of our team.",
+  },
+  {
+    name: "Markus Klein",
+    role: "Founder",
+    company: "CodeForge",
+    avatar: "https://example.com/avatars/markus-klein.jpg",
+    rating: 4,
+    quote:
+      "Employer branding made a huge difference—applications increased by 70%. Worth every penny.",
+  },
+  {
+    name: "Sophia Rodriguez",
+    role: "HR Director",
+    company: "ByteSolutions",
+    avatar: "https://example.com/avatars/sophia-rodriguez.jpg",
+    rating: 5,
+    quote:
+      "Their headhunting service found us a machine learning expert we’d never have sourced on our own.",
+  },
+  {
+    name: "David Kim",
+    role: "Senior Developer",
+    avatar: "https://example.com/avatars/david-kim.jpg",
+    rating: 5,
+    quote:
+      "As a candidate, the platform was seamless. Landed a remote role at a Silicon Valley startup in days.",
+  },
+  {
+    name: "Elena Petrova",
+    role: "CEO",
+    company: "Scalify",
+    avatar: "https://example.com/avatars/elena-petrova.jpg",
+    rating: 5,
+    quote:
+      "30-day replacement guarantee gave us peace of mind. Our first hire didn’t fit? They handled the swap effortlessly.",
+  },
+  {
+    name: "Jordan Lee",
+    role: "Tech Recruiter",
+    avatar: "https://example.com/avatars/jordan-lee.jpg",
+    rating: 4,
+    quote:
+      "Love the candidate analytics—helps us tweak job descriptions for better responses.",
+  },
+  {
+    name: "Nia Williams",
+    role: "Backend Developer",
+    avatar: "https://example.com/avatars/nia-williams.jpg",
+    rating: 5,
+    quote:
+      "Finally a job site that understands devs! No spam, just relevant roles matching my stack.",
+  },
+  {
+    name: "Carlos Mendez",
+    role: "Director of Engineering",
+    company: "CloudHive",
+    avatar: "https://example.com/avatars/carlos-mendez.jpg",
+    rating: 5,
+    quote:
+      "Featured listings got us 3x more applicants. Hired two full-stack devs in record time.",
+  },
+  {
+    name: "Lena Zhang",
+    role: "Product Manager",
+    company: "AppVortex",
+    avatar: "https://example.com/avatars/lena-zhang.jpg",
+    rating: 4,
+    quote:
+      "The cultural fit assessment was spot-on. Our new hire meshed with the team from day one.",
+  },
+];

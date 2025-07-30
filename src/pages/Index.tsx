@@ -2,6 +2,7 @@ import Hero from "../componants/Hero";
 import Jobs from "../componants/Jobs";
 import Main from "../componants/Main";
 import OurServices from "../componants/OurServices";
+import Testemonial from "../componants/Testemonial";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
         <Jobs />
       </div>
       <OurServices />
+      <Testemonial />
     </>
   );
 };

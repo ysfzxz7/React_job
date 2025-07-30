@@ -1,4 +1,4 @@
-import jobsdata from "../data";
+import { jobsdata } from "../data";
 
 export function useGetLocation() {
   const allLocations: Set<string> = new Set();
